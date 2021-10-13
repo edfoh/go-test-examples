@@ -2,6 +2,13 @@
 
 package example5_test
 
+import (
+	"os"
+	"testing"
+
+	"github.com/stretchr/testify/require"
+)
+
 func TestSomething(t *testing.T) {
 	envVarCleanup := testSetEnvVar(t)
 	defer envVarCleanup()

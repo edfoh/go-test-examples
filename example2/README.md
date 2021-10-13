@@ -28,7 +28,7 @@ In Go 1.4, [TestMain](https://pkg.go.dev/testing#hdr-Main) was introduced. As me
 
 Besides test setup and teardown, this can also be a useful way to test subprocesses. 
 
-Another use is to run ensure code runs in the main goroutine that is locked to the main OS thread, where the tests can be run in another goroutine. For example, graphics related code / libraries are very particular about this. Consider
+Another use-case is to ensure code runs in the main goroutine that is locked to the main OS thread, where the tests can be run in another goroutine. For example, graphics related code / libraries are very particular about this. Consider
 
 ```
 func init() {

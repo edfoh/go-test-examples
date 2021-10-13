@@ -44,7 +44,7 @@ go test -v ./... -tags=all -run=Two
 go test -v ./... -tags=all -run=Three
 ```
 
-## testing with time
+## Testing with time
 
 At times, we might need to deal with test that using `time.Now`. A simple way to test this is to declare a `var` to return a func for `time.Now`. We can override that in our test. See [example5.go](./exampl5.go) and [example5.4_test.go](./example5.4_test.go).
 

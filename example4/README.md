@@ -12,11 +12,13 @@ Prefer blackbox testing (`_test package`) over whitebox testing (`same package`)
 
 An example of cycle dependency in whitebox testing:
 
+```
 /--A
   /--a.go
   /--a_test.go
 /--B
   /--b.go
+```
 
 where `package B` relies on `package A`. `a_test.go` also uses the same package `A` and in the test, it relies on a function in `Package B`. This results in a cyclic dependency. The simple way around this is to make `a_test.go` under `package A_test`. See [A/a_test.go](./A/a_test.go) to see how this works.
 
