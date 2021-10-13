@@ -1,6 +1,6 @@
 // +build !feat1,!feat2,!feat3
 
-package example5_test
+package example6_test
 
 import (
 	"testing"

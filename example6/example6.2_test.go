@@ -1,6 +1,6 @@
 // +build all feat3
 
-package example5_test
+package example6_test
 
 import "testing"
 

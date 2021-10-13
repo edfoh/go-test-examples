@@ -1,6 +1,6 @@
 // +build all
 
-package example5_test
+package example6_test
 
 import (
 	"testing"
