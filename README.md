@@ -1,5 +1,7 @@
 # go-test-examples
 
+[![GoDoc](https://godoc.org/github.com/edfoh/go-test-examples?status.svg)](https://godoc.org/github.com/edfoh/go-test-examples)
+
 This repo aims to demonstrate good practices around go testing.
 
 * [Different styles of testing](./example1/README.md)
