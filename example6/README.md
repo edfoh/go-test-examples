@@ -21,10 +21,10 @@ The following is a `negation` operation. So this file will only be included if `
 // +build !tag1
 ```
 
-Consider [example5.1_test.go](./example5.1_test.go), [example5.2_test.go](./example5.2_test.go) and [example5.3_test.go](./example5.3_test.go) with build tags added. Try the following and see what happens.
+Consider [example6.1_test.go](./example6.1_test.go), [example6.2_test.go](./example6.2_test.go) and [example6.3_test.go](./example6.3_test.go) with build tags added. Try the following and see what happens.
 
 ```
-# directory example5
+# directory example6
 
 go test -v ./... -tags=feat1
 go test -v ./... -tags=feat2
@@ -37,7 +37,7 @@ go test -v ./... -tags=feat4
 Another way to separate tests is to name your tests in a specific manner and use the [test flags](https://pkg.go.dev/cmd/go#hdr-Testing_flags) `-run` which uses a regex pattern. Try these and observe the output
 
 ```
-# directory example5
+# directory example6
 
 go test -v ./... -tags=all -run=One
 go test -v ./... -tags=all -run=Two
@@ -46,7 +46,7 @@ go test -v ./... -tags=all -run=Three
 
 ## 2. Testing with time
 
-At times, we might need to deal with test that using `time.Now`. A simple way to test this is to declare a `var` to return a func for `time.Now`. We can override that in our test. See [example5.go](./example5.go) and [example5.4_test.go](./example5.4_test.go).
+At times, we might need to deal with test that using `time.Now`. A simple way to test this is to declare a `var` to return a func for `time.Now`. We can override that in our test. See [example6.go](./example6.go) and [example6.4_test.go](./example6.4_test.go).
 
 
 ## 3. test helper functions
@@ -56,4 +56,4 @@ At times, we might need to deal with test that using `time.Now`. A simple way to
 * use [t.Helper](https://pkg.go.dev/testing#T.Helper) for more concise failure reporting
 * return cleanup code in a func()
 
-See `testSetEnvVar` in [example5.5_test.go](./example5.5_test.go)
+See `testSetEnvVar` in [example6.5_test.go](./example6.5_test.go)
